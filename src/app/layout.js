@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import localFont from "next/font/local";
 import ThemeProvider from 'react-bootstrap/ThemeProvider';
 import "./globals.css";
-
+import "./custom.css";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
