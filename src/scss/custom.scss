@@ -1,34 +1,55 @@
-/* The following block can be included in a custom.scss */
 @import "../../node_modules/bootstrap/scss/functions";
-
-
-
 @import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/mixins";
-$barton : #2F6F51;
 
-/* make the customizations */
+//OVERWRITE GLOBAL VARIABLES FROM BOOTSTRAP. 
+//NOTE: If you don't now name of any variables, you can see the name in the inpection on the browser. 
+// https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss
+
+//COLORS
+// $primary : red;
+// $secondary : green;
+// $info: tomato;
+// $danger: teal;
+// $success : yellow;
+
+
+$body-bg: #000;
+$body-color: #e2dada;
+$font-family-sans-serif: "Raleway", sans-serif;
+//$font-size-base: 8rem; 
+
+$grid-gutter-width : 0.5rem; 
+
+//CREATE OWR GLOBAL VARIABLES ONLY FOR COLORS
+$colors: (
+  "blue": yellow,
+  "indigo": grey,
+  "purple": pink,
+  "pink": red,
+  
+) !default;
+
+
+//CREATE OWR GLOBAL VARIABLES FOR COMPONENTS DE BOOTSTRAP
+
+$barton : #2F6F51 ;
+$barton-rgb : rgb(47, 111, 81) ;
+
 $custom-theme-colors: (
+  "custom-color": #900,
   'barton' : $barton,
+  'barton-rgb' : $barton-rgb,
+  "barton-text-emphasis" : $barton,
+  "barton-bg-subtle" : grey,
+  "barton-border-subtle" : grey
 );
-
-$custom-colors : (
-  'barton' : $barton,
-);
-
 
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
-$colors: map-merge($colors, $custom-colors);
 
 
-@import "../../node_modules/bootstrap/scss/maps";
-// @import "../../node_modules/bootstrap/scss/bootstrap";
-// 3. Include remainder of required Bootstrap stylesheets
+//IF YOU WANT ADD ADITIONAL PERSONAL SCSS DO IT IN GLOBAL.SCSS
 
-// 4. Include any optional Bootstrap components as you like
-@import "../../node_modules/bootstrap/scss/root";
-@import "../../node_modules/bootstrap/scss/reboot";
-@import "../../node_modules/bootstrap/scss/type";
-@import "../../node_modules/bootstrap/scss/images";
-@import "../../node_modules/bootstrap/scss/containers";
-@import "../../node_modules/bootstrap/scss/grid";
+/* import bootstrap to set changes */
+@import './../../node_modules/bootstrap/scss/bootstrap';
+
+
