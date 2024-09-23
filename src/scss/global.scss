@@ -1,6 +1,19 @@
 @import "custom.scss";
 
-$purple : red; 
-.apha{
-    color: $purple;
+
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  --bs-gutter-x: 5rem ;
+}
+
+.navbar-text{
+  color: white;
+  font-size: 24px !important;
+  font-weight: 700 !important;
 }

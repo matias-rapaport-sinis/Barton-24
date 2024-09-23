@@ -1,6 +1,13 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 
+
+$barton : #2F6F51 ;
+$barton-rgb : rgb(47, 111, 81) ;
+
+$barton-bg-dark : #2F6F51;
+$barton-dark-color : white;
+
 //OVERWRITE GLOBAL VARIABLES FROM BOOTSTRAP. 
 //NOTE: If you don't now name of any variables, you can see the name in the inpection on the browser. 
 // https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss
@@ -12,13 +19,24 @@
 // $danger: teal;
 // $success : yellow;
 
-
-$body-bg: #000;
-$body-color: #e2dada;
+//$body-bg: white;
+$body-color: rgb(50, 23, 170);
 $font-family-sans-serif: "Raleway", sans-serif;
 //$font-size-base: 8rem; 
 
-$grid-gutter-width : 0.5rem; 
+//FONT
+$font-family-base: 'Roboto' ;
+
+//NAVAR
+$navbar-dark-color: $barton-dark-color;
+$navbar-dark-hover-color:rgba($barton-dark-color, 0.6);
+$navbar-dark-active-color:$barton-dark-color;
+$navbar-dark-disabled-color:rgba($barton-dark-color, 0.1);
+$navbar-dark-toggler-border-color:rgb(21, 14, 34);
+
+//NAVBAR - DROPDOWN 
+$dropdown-link-color: black;
+$dropdown-color: white !default;
 
 //CREATE OWR GLOBAL VARIABLES ONLY FOR COLORS
 $colors: (
@@ -32,20 +50,16 @@ $colors: (
 
 //CREATE OWR GLOBAL VARIABLES FOR COMPONENTS DE BOOTSTRAP
 
-$barton : #2F6F51 ;
-$barton-rgb : rgb(47, 111, 81) ;
 
 $custom-theme-colors: (
-  "custom-color": #900,
   'barton' : $barton,
   'barton-rgb' : $barton-rgb,
   "barton-text-emphasis" : $barton,
-  "barton-bg-subtle" : grey,
-  "barton-border-subtle" : grey
-);
+  "barton-bg-subtle" : rgb(102, 13, 13),
+  "barton-border-subtle" : rgb(90, 68, 68),
+  );
 
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
-
 
 //IF YOU WANT ADD ADITIONAL PERSONAL SCSS DO IT IN GLOBAL.SCSS
 
