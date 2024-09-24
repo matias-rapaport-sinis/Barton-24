@@ -1,18 +1,6 @@
 @import "custom.scss";
 
 
-
-/* .container,
-.container-fluid,
-.container-xxl,
-.container-xl,
-.container-lg,
-.container-md,
-.container-sm {
-  --bs-gutter-x: 5rem ;
-;
-}
- */
 .buttom-space{
   margin-bottom: 5rem;
 }
@@ -35,16 +23,9 @@
   font-weight: 700 !important;
 }
 
+
 .video::-webkit-media-controls-panel {
   display: none !important;
   opacity: 1 !important;
-}
-
-.arrow-right {
-  width: 0; 
-  height: 0; 
-  border-top: 70px solid transparent;
-  border-bottom: 70px solid transparent;
-  border-left: 90px solid white;
 }
 
