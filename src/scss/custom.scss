@@ -12,45 +12,9 @@ $barton-dark-color : white;
 //NOTE: If you don't now name of any variables, you can see the name in the inpection on the browser. 
 // https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss
 
-//COLORS
-// $primary : red;
-// $secondary : green;
-// $info: tomato;
-// $danger: teal;
-// $success : yellow;
-
-//$body-bg: white;
-$body-color: rgb(50, 23, 170);
-$font-family-sans-serif: "Raleway", sans-serif;
-//$font-size-base: 8rem; 
-
-//FONT
-$font-family-base: 'Roboto' ;
-
-//NAVAR
-$navbar-dark-color: $barton-dark-color;
-$navbar-dark-hover-color:rgba($barton-dark-color, 0.6);
-$navbar-dark-active-color:$barton-dark-color;
-$navbar-dark-disabled-color:rgba($barton-dark-color, 0.1);
-$navbar-dark-toggler-border-color:rgb(21, 14, 34);
-
-//NAVBAR - DROPDOWN 
-$dropdown-link-color: black;
-$dropdown-color: white !default;
-
-//CREATE OWR GLOBAL VARIABLES ONLY FOR COLORS
-$colors: (
-  "blue": yellow,
-  "indigo": grey,
-  "purple": pink,
-  "pink": red,
-  
-) !default;
-
-
 //CREATE OWR GLOBAL VARIABLES FOR COMPONENTS DE BOOTSTRAP
 
-
+/* 
 $custom-theme-colors: (
   'barton' : $barton,
   'barton-rgb' : $barton-rgb,
@@ -59,7 +23,7 @@ $custom-theme-colors: (
   "barton-border-subtle" : rgb(90, 68, 68),
   );
 
-$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+$theme-colors: map-merge($theme-colors, $custom-theme-colors); */
 
 //IF YOU WANT ADD ADITIONAL PERSONAL SCSS DO IT IN GLOBAL.SCSS
 $grid-breakpoints: (

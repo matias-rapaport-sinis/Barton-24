@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from "next/image";
+import styles from "./Video.module.css";
 
 function ButtonPlayer({playFunction}){
     return (
@@ -11,7 +12,7 @@ function ButtonPlayer({playFunction}){
             onClick={playFunction} 
             className="position-absolute top-50 start-50 mt-5 translate-middle bg-barton rounded-circle d-flex justify-content-center align-items-center " 
             style={{zIndex : 1000, aspectRatio : 1/1, width: 100, height :100}}> 
-                <Image className="" style={{marginLeft : 12}} src="/play-48.png" width="48" height="48" alt="play bottom" />
+                <Image className={styles.video} style={{marginLeft : 12}} src="/play-48.png" width="48" height="48" alt="play bottom" />
         </div>
     );
 }

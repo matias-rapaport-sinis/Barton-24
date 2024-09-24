@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 function NavbarComponent() {
   return (
-    <Navbar expand="lg" className='' bg="barton" variant='dark' sticky="top">
+    <Navbar expand="lg" className='bg-dark-barton' variant='dark' sticky="top">
       <Container >
         <Navbar.Brand href="#home">
           <Image

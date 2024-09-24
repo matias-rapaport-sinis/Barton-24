@@ -15,7 +15,7 @@ export default function TextCut({title}){
                 <Col>
                     <p 
                         style={styles}
-                        className='text-uppercase text-center text-barton'  >
+                        className='text-uppercase text-center text-darkness-barton'  >
                             {title}
                     </p>
                 </Col>

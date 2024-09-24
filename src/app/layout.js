@@ -1,5 +1,4 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./_components/Navbar"
 import Footer from './_components/Footer';
@@ -11,11 +10,6 @@ export const metadata = {
   description: "Barton tu proxima contruccion",
 };
 
-const styles = {
-  colorBarton : "",
-  backgroundBarton : "",
-  
-};
 
 export default function RootLayout({ children }) {
   return (

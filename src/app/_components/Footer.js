@@ -2,19 +2,18 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-
 export default function Footer() {
 
+    /* Este style no puede ser movido a un modulo, porque si no next no puede resolver de donde cargar la imagen. */
     const styles = {
         BackgroundImage: {
             backgroundImage: `url(fondo.png)`,
             backgroundSize: "cover"
         },
-
     }
 
     return (
-        <Container fluid className='bg-barton'>
+        <Container fluid className='bg-dark-barton text-light-barton'>
             <Row>
                 <Col style={styles.BackgroundImage}></Col>
                 <Col className='d-flex flex-column flex-wrap h-100 '>

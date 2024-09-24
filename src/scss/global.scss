@@ -1,6 +1,28 @@
 @import "custom.scss";
 
 
+.bg-dark-barton{
+  background-color: #2F6F51;
+}
+
+.text-dark-barton{
+  color : #2F6F51;
+}
+
+.text-light-barton{
+  color : white !important;
+}
+
+.text-darkness-barton{
+  color : 124734;
+}
+
+.fs-text-barton{
+  font-size: 20px;
+  font-weight: 1000;
+
+}
+
 .buttom-space{
   margin-bottom: 5rem;
 }
@@ -14,11 +36,5 @@
   color: white;
   font-size: 24px !important;
   font-weight: 700 !important;
-}
-
-
-.video::-webkit-media-controls-panel {
-  display: none !important;
-  opacity: 1 !important;
 }
 

@@ -4,9 +4,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
-import TextCut from './_components/TextDivider';
+import TextDiveder from './_components/TextDivider';
 import ImageCut from './_components/ImageDivider';
-import VideoComponent from './_components/VideoComponent';
+import VideoComponent from './_components/Video/VideoComponent';
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
         </Row>
       </Container>
 
-      <TextCut title="barton es tu proxima compra" />
+      <TextDiveder title="barton es tu proxima compra" />
      
       <Container  className='buttom-space'>
         <Row className='g-1'>
@@ -62,7 +62,7 @@ export default function Home() {
         </Row>
       </Container>
 
-      <TextCut title="Productos barton" />
+      <TextDiveder title="Productos barton" />
 
       <Container className='buttom-space g-1'>
         <Row>
@@ -90,7 +90,7 @@ export default function Home() {
 
       <ImageCut url="barras.png" alt="Barras" />
 
-      <TextCut title="Aplicaciones" />
+      <TextDiveder title="Aplicaciones" />
 
       <Container className='buttom-space'>
         <Row className="g-1">
