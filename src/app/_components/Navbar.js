@@ -8,8 +8,8 @@ import Image from 'next/image';
 
 function NavbarComponent() {
   return (
-    <Navbar expand="lg" className='' bg="barton" variant='dark'>
-      <Container fluid>
+    <Navbar expand="lg" className='' bg="barton" variant='dark' sticky="top">
+      <Container >
         <Navbar.Brand href="#home">
           <Image
             src="/logo-barton.png"

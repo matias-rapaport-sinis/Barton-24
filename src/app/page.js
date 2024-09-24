@@ -4,11 +4,41 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
-
+import TextCut from './_components/TextDivider';
+import ImageCut from './_components/ImageDivider';
+import VideoComponent from './_components/VideoComponent';
 export default function Home() {
   return (
-    <div>
-      <Container fluid>
+    <main className='h-100'>
+
+      <VideoComponent  url="https://www.youtube.com/watch?v=R3taePp01KU"/>
+
+      <TextCut title="barton es tu proxima compra" />
+     
+      <Container  className='buttom-space'>
+        <Row className='pb-2'>
+
+          {[
+            { url: "/caracteristicas/1.png", alt: "Hombre que construlle", title: "4 veces mas liviano" },
+            { url: "/caracteristicas/2.png", alt: "Red", title: "3 veces mas resistente" },
+            { url: "/caracteristicas/3.png", alt: "Anillo cargado por un hombre", title: "Flexible" },
+            { url: "/caracteristicas/4.png", alt: "Tubos de ensayo con acido", title: "No corresivo" },
+            { url: "/caracteristicas/5.png", alt: "Pared", title: "No conductivo" },
+
+          ].map((item, index) => (
+            <Col key={index} className='p-1'>
+              <Card className='border-0 text-center bg-barton rounded-0' >
+                <Card.Img style={{ aspectRatio : 3/4 }} variant="top" src={item.url} />
+                <Card.Body>
+                  <Card.Title className='text-white text-uppercase fw-bold'>{item.title}</Card.Title>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+
+      <Container className='buttom-space'>
         <Row>
           {[
             { url: "/caracteristicas-iconos/1.png", alt: "Hombre que construlle", title: "4 veces mas liviano" },
@@ -17,14 +47,16 @@ export default function Home() {
             { url: "/caracteristicas-iconos/4.png", alt: "Pared", title: "No conductivo" },
             { url: "/caracteristicas-iconos/5.png", alt: "Red", title: "3 veces mas resistente" },
           ].map((item, index) => (
-            <Col key={index} className='text-center'>
+            <Col key={index} className='text-center '>
               <Image src={item.url} alt={item.alt} />
             </Col>
           ))}
         </Row>
       </Container>
 
-      <Container fluid>
+      <TextCut title="Productos barton" />
+
+      <Container className='buttom-space'>
         <Row>
           {[
             { url: "/productos/1.png", alt: "Hombre que construlle", title: "Barras" },
@@ -39,7 +71,7 @@ export default function Home() {
                 <Card.Body className='p-0'>
                   <Card.Title className='bg-barton mx-auto px-2 py-2 text-center rounded text-white text-uppercase fw-bold w-75'>
                     {item.title}
-                    </Card.Title> 
+                  </Card.Title>
                 </Card.Body>
               </Card>
             </Col>
@@ -47,7 +79,12 @@ export default function Home() {
         </Row>
       </Container>
 
-      <Container fluid>
+
+      <ImageCut url="barras.png" alt="Barras" />
+
+      <TextCut title="Aplicaciones" />
+
+      <Container className='buttom-space'>
         <Row className="justify-content-md-center">
           {[
             { url: "/aplicaciones/1.png", alt: "Hombre que construlle", title: "Pisos", detail: "Las barras de fibra de vidrio son considerablemente más ligeras que el hierro. Esto facilita el manejo, transporte e instalación de los pisos industriales durante el proceso de construcción. " },
@@ -70,6 +107,6 @@ export default function Home() {
           ))}
         </Row>
       </Container>
-    </div>
+    </main>
   );
 }

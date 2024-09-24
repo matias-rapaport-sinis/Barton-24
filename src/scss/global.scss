@@ -2,7 +2,7 @@
 
 
 
-.container,
+/* .container,
 .container-fluid,
 .container-xxl,
 .container-xl,
@@ -10,6 +10,23 @@
 .container-md,
 .container-sm {
   --bs-gutter-x: 5rem ;
+;
+}
+ */
+.buttom-space{
+  margin-bottom: 5rem;
+}
+
+.top-space{
+  margin-top: 5rem;
+}
+
+.text-cut{
+  color : $barton;
+  font-weight: 1000;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .navbar-text{
@@ -17,3 +34,17 @@
   font-size: 24px !important;
   font-weight: 700 !important;
 }
+
+.video::-webkit-media-controls-panel {
+  display: none !important;
+  opacity: 1 !important;
+}
+
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 70px solid transparent;
+  border-bottom: 70px solid transparent;
+  border-left: 90px solid white;
+}
+

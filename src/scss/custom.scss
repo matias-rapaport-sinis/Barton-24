@@ -62,8 +62,20 @@ $custom-theme-colors: (
 $theme-colors: map-merge($theme-colors, $custom-theme-colors);
 
 //IF YOU WANT ADD ADITIONAL PERSONAL SCSS DO IT IN GLOBAL.SCSS
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 768px,
+  lg: 1024px
+);
+
+$container-max-widths: (
+  sm: 420px,
+  md: 720px,
+  lg: 1700px
+);
+
 
 /* import bootstrap to set changes */
 @import './../../node_modules/bootstrap/scss/bootstrap';
-
 
