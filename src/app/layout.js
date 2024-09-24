@@ -11,6 +11,12 @@ export const metadata = {
   description: "Barton tu proxima contruccion",
 };
 
+const styles = {
+  colorBarton : "",
+  backgroundBarton : "",
+  
+};
+
 export default function RootLayout({ children }) {
   return (
       <html lang="en">
